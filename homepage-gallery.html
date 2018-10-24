@@ -1,0 +1,89 @@
+<div id="gallery-wrapper">
+
+  <div class="gallery">
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-1.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-2.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-3.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-4.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-5.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-6.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-7.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-8.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-9.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-10.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-11.jpg" /></div>
+    <div class="item"><img src="//s2fevents.co.uk/wp-content/uploads/2018/10/Picture-12.jpg" /></div>
+  </div>
+
+  <div class="button-wrapper" style="text-align:center;">
+    <a class="previous-arrow"><i class="fas fa-chevron-circle-left"></i></a>
+    <a class="next-arrow"><i class="fas fa-chevron-circle-right"></i></a>
+  </div>
+
+</div>
+
+<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+
+<script>// <![CDATA[
+$('head').append('<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>');
+// ]]></script>
+
+<script>// <![CDATA[
+$('.gallery').slick({
+  dots: false,
+  speed: 500,
+  infinite: true,
+  prevArrow: $(".previous-arrow"),
+  nextArrow: $(".next-arrow"),
+  cssEase: 'ease-in',
+  adaptiveHeight: 'true',
+  slidesToShow: 2,
+  slidesToScroll: 2
+});
+// ]]></script>
+
+<style>
+.button-wrapper svg{
+  font-size: 40px;
+  color: #E48555;
+  cursor:pointer!important;
+  margin: 0 5px;
+  -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.button-wrapper svg:hover {
+color: #B66A44
+}
+
+#gallery-wrapper {
+  text-align: center;
+}
+
+.button-wrapper{
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+  top: -30px;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  -webkit-box-shadow: 0px 1px 20px 2px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 1px 20px 2px rgba(0,0,0,0.5);
+box-shadow: 0px 1px 20px 2px rgba(0,0,0,0.5);
+}
+
+.gallery{
+  border-radius: 20px;
+    overflow: hidden;
+        border: 3px solid #E48555;
+}
+</style>
